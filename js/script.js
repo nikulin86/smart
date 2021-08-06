@@ -17,7 +17,8 @@ burgerButton.addEventListener('click', (event) => {
 const teamBody = document.querySelectorAll('.team-body');
 
 function myFunction() {
-  this.classList.toggle('team-body-active')
+  this.classList.toggle('team-body-active');
+  setTimeout(() => {this.classList.remove('team-body-active')}, 6000)
 }
 
 for (let index = 0; index < teamBody.length; index++) {
